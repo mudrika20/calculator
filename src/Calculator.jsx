@@ -78,5 +78,3 @@ const Calculator = () => {
     )
 }
 export default Calculator
-//hw=> now modify this cal to also have decimal operator in it && once u enter the input 1 and press 
-//any operator button th input1 should go in a diff input box that is placed on top of the current one
