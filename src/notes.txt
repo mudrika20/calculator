@@ -1,0 +1,21 @@
+promises in JS:
+JSON=J S object notation
+useEffect(() => {
+        console.log("count=", count);
+        fetch("https://randomuser.me/api/?results=10")//used to call API
+      .then((response) => response.json())//this line converts the response obj(which API returns) into json data
+      .then((data) => {
+        const fetchedNames = data.results.map(
+          (user) => `${user.name.first} ${user.name.last}`
+        );
+        setNames(fetchedNames);
+    }
+    
+      )
+    }, [count])
+
+
+    to run a code after a certain delay we have setTimeout() but now what if we want to run a piece of code continously
+    after a delay; 
+    FOR THAT PURPOSE WE HAVE setInterval() !!!!!!! 
+    we also need to clear the setInterval timer to stop it from running infinite time 
