@@ -3,9 +3,12 @@ import Child1 from "./Child1";
 
 function Parent() {
     const [name1, setName1] = useState("abc")
+    const [x, setX] = useState(0)
+
     return(
         <> 
-            <Child1 first = {name1} />
+            <h3>{x}</h3>
+            <Child1 name1 = {name1} setX = {setX} />
         </>
     )
 }
